@@ -15,6 +15,7 @@ import FinalCTA from './components/FinalCTA'
 import Contact from './components/Contact'
 import FloatingActions from './components/FloatingActions'
 import Reveal from './components/Reveal'
+import Cursor from './components/Cursor'
 
 function Section({ children, id }) {
   return (
@@ -27,6 +28,7 @@ function Section({ children, id }) {
 function App() {
   return (
     <div className="scroll-smooth">
+      <Cursor />
       <Header />
       <main>
         <Section id="hero"><Hero /></Section>

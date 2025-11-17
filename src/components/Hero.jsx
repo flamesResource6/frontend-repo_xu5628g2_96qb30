@@ -1,4 +1,5 @@
-import { Star, CheckCircle2, MessageCircle, Calendar } from 'lucide-react'
+import { Star, CheckCircle2, MessageCircle, Calendar, Sparkles } from 'lucide-react'
+import ThreeDTooth from './ThreeDTooth'
 
 export default function Hero() {
   return (
@@ -30,10 +31,11 @@ export default function Hero() {
               <Calendar className="w-4 h-4" /> Online-Termin sichern
             </a>
           </div>
+          <p className="text-xs text-slate-500 flex items-center gap-1"><Sparkles className="w-4 h-4 text-sky-400"/> Interaktive 3D-Optik: Maus bewegen / neigen – oder Auto-Rotation ansehen</p>
         </div>
 
         <div className="relative">
-          <div className="aspect-video rounded-xl bg-slate-200 shadow-inner" />
+          <ThreeDTooth />
           <div className="absolute -bottom-4 right-4 bg-white shadow-lg rounded-lg px-4 py-3 flex items-center gap-3">
             <div className="flex items-center text-amber-500">
               <Star className="w-5 h-5 fill-amber-400" />
